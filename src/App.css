@@ -1,0 +1,126 @@
+
+.custom-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #329e22;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.custom-checkbox:checked {
+  background-color: #22c55e;
+  border-color: #22c55e;
+}
+
+.custom-checkbox:checked::after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.custom-toggle {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  border: 2px solid #2ebd35;
+}
+
+.custom-toggle:checked {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.custom-toggle:checked::after {
+ 
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  left: 4px;
+  top: 0px;
+}
+
+.custom-toast-container {
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.custom-toast {
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+
+.toast-header {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.toast-body-custom {
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.toast-body {
+  font-size: 1.1rem;
+}
+
+.toast-body p {
+  font-size: 1rem;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+button.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+}
+
+button.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+button.btn-secondary:hover {
+  background-color: #7f8c8d;
+}
+
+.toast-body-custom {
+  font-size: 1rem;
+  line-height: 1.5;
+ 
+}
